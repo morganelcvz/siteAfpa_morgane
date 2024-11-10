@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Site Afpa</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Arimo&family=Courgette&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/dd845416b8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+		<nav>
+			<img src="images/afpa.png" title="logo afpa">
+			<navlink>
+				<a href="index.html">Accueil</a>
+				<a href="formation.html">Formation Développeur Web</a>
+				<a href="temoignages.html">Témoignages</a>
+				<a href="references.html">Références</a>
+				<a href="contact.html" class="select">Contact</a>
+			</navlink>
+		</nav>
+    </header>
+	<div class="contact_section">
+        <h1>Contactez nous</h1>
+        <h2>Veuillez remplir le formulaire de contact ci dessous</h2>
+        <a href="#form"><img src="images/arrow.png"></a>
+        <div class="formulaire_section">
+            <div class="formulaire" id="form">
+                <div class="top_form">
+                    <div class="group_top">
+                        <label for="nom">Prénom Nom*</label>
+                        <input type="text" id="nom" title="nom">
+                    </div>
+                    <div class="group_top">
+                        <label for="email">Adresse e-mail*</label>
+                        <input type="text" id="email" title="email" style="width:300px">
+                    </div>
+                    <div class="group_top">
+                        <label for="telephone">Téléphone*</label>
+                        <input type="tel" id="telephone" title="telephone">
+                    </div>
+                </div>
+                <div class="bottom_form">
+                    <div class="drop_form">
+                        <label for="modalite">Modalités de formation :</label>
+                        <select name="modalite" id="modalite">
+                            <option value="select">Sélectionner</option>
+                            <option value="presentiel">En centre de formation (présentiel)</option>
+                            <option value="distance">100% à distance</option>
+                            <option value="alternance">En contrat d'alternance avec l'entreprise</option>
+                            <option value="sans">sans préférences</option>
+                        </select>
+                        <label for="situation">Votre situation :</label>
+                        <select name="situation" id="situation">
+                            <option value="select">Sélectionner</option>
+                            <option value="demandeur">Demandeur d'emploi</option>
+                            <option value="salrie">salarié en transition professionnelle</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                        <label for="region">Région d'origine :</label>
+                        <select name="situation" id="situation">
+                            <option value="select">Sélectionner</option>
+                            <option value="Aquitaine">Aquitaine</option>
+                            <option value="Auvergne">Auvergne</option>
+                            <option value="Bretagne">Bretagne</option>
+                            <option value="Haute Normandie">Haute Normandie</option>
+                            <option value="Languedoc-Roussillon">Languedoc-Roussillon</option>
+                            <option value="Limousin">Limousin</option>
+                            <option value="Lorraine">Lorraine</option>
+                            <option value="Nord-Pas-de-Calais">Nord-Pas-de-Calais</option>
+                            <option value="Poitou-Charentes">Poitou-Charentes</option>
+                            <option value="Provence-Alpes-Côte d'Azur">Provence-Alpes-Côte d'Azur</option>
+                        </select>
+                    </div>
+                    <div class="message_form">
+                        <textarea id="message" name="message" rows="8">Votre message...</textarea>
+                        <div class="bb">
+                            <p>*Champs obligatoires</p>
+                            <button>ENVOYER</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+
+    <footer style="margin-top:-15%;">
+		<div class="bg_footer"></div>
+		<div class="footer_section">
+			<div class="footer_barre">
+				<img src="images/afpa_footer.png">
+				<span>
+				<a href="">Mention légales</a> |
+				<a href="">Confidentialité</a> |
+				<a href="">Contact</a> | 
+				</span>
+				<p>© 2024 Morgane Le Calvez AFPA DWWM</p>
+			</div>
+		</div>
+    </footer>
+</body>
+</html>
